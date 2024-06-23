@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 
 server.listen(3000,()=>{console.log('server is listening to your sounds >:)')});
 var db,rather,l;
-fs.readFile('questions.json','utf8',(e,data)=>{
+fs.readFile('./questions.json','utf8',(e,data)=>{
   db=JSON.parse(data);
   l=Math.floor(Math.random()*db.length);
   rather=db[l];
