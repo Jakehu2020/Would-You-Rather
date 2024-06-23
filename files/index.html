@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body align="center">
+    <div class="menu">
+      <ion-icon name="add-circle-outline" class="b1" alt="new"></ion-icon>
+      <br>
+      <ion-icon name="file-tray-full-outline" class="b2 b" alt="gallery"></ion-icon>
+      <br>
+      <ion-icon name="home-outline" class="b3 b" alt="home"></ion-icon>
+    </div>
+    <script>
+      let USERNAME=`<%- username %>`
+      let ID = <%- rather[5] %>
+    </script>
+    <% if(username){ %>
+      <h3><%- username %></h3>
+    <% } else { %>
+      <script src="https://auth.util.repl.co/script.js" authed="location.reload()"></script>
+    <% } %>
+      <br><br><br>
+    <h1>Would You Rather...</h1>
+      
+    <button class="rather1" onclick="showRates(<%- rather[0].vote %>, <%- rather[1].vote %>,1)"><%- rather[0].text %></button>
+    <button class="rather2" onclick="showRates(<%- rather[0].vote %>, <%- rather[1].vote %>,2)"><%- rather[1].text %></button>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

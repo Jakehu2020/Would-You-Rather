@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body align="center">
+    <div class="menu">
+      <ion-icon name="add-circle-outline" class="b1" alt="new"></ion-icon>
+      <br>
+      <ion-icon name="file-tray-full-outline" class="b2 b" alt="gallery"></ion-icon>
+      <br>
+      <ion-icon name="home-outline" class="b3 b" alt="home"></ion-icon>
+    </div>
+    <% if(username){ %>
+      <h3><%- username %></h3>
+    <% } else { %>
+      <script src="https://auth.util.repl.co/script.js" authed="location.reload()"></script>
+    <% } %>
+      <br><br><br>
+      <h1>Create a new Question</h1>
+      <button class="rather1"><input class="r1"></button>
+      <button class="rather2"><input class="r2"></button>
+      <br>
+      <div class="Anonymousity">
+        <input type="checkbox" name="anonymous">
+        <label for="anonymous">Anonymous?</label>
+        <br>
+        <div class="Checked_Anon">
+          <label for="Anonymous_name">What would you like your "Anonymous" name to be?</label>
+          <br>
+          <input class="Anonymous_name" name="Anonymous_name">
+        </div>
+      </div>
+      <br><br>
+      <button class="submit">Submit Question</button>
+      <script src="js/submit.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

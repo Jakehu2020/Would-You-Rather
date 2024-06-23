@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@font-face {
+  font-family: 'QuickSandx2';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v28/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58m-wi40.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'QuickSandx2';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v28/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58i-wi40.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'QuickSandx2';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v28/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58a-wg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+  background: #363636;
+}
+* {
+  /* background: #363636; */
+  color: #9c9c9c;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden; 
+}
+.rather1, .rather2 {
+  width: 40%;
+  border-radius: 5px;
+  height: 200px;
+  border: 0;
+  font-size: 50px;
+  font-family: 'QuickSandx2', sans-serif;
+  color: black;
+}
+.rather1:hover {
+  background: #140fff;
+}
+.rather1 {
+  background: #6461ff;
+  transition: background 500ms;
+}
+.rather2 {
+  background: #ff4a4a;
+  transition: background 500ms;
+}
+.rather2:hover {
+  background: #ff0000;
+}
+
+h3 {
+  right: 20px;
+  position: absolute;
+}
+
+.replit-auth-button {
+  border: 0;
+  background: lightyellow;
+  border-radius: 3px;
+  right: 20px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.r1, .r2 {
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  text-align: center;
+}
+
+input:focus{
+  outline: none;
+}
+.submit {
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
+  transition: all 500ms ease;
+  font-size: 20px;
+}
+.submit:hover {
+  width: 220px;
+  height: 55px;
+}
+
+.notification {
+  transition: all 0.5s;
+  background-color: #636363;
+  border: 1px solid #363636;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* color: #333; */
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: absolute;
+  /* right: 25px !important; */
+  width: 100px;
+  cursor: pointer;
+}
+
+.timer_notify {
+  width: 100%;
+  position: relative;
+  background-color: red;
+  height: 2px;
+}
+.Anonymousity {
+  font-size: 20px;
+}
+.Checked_Anon {
+  display: none;
+  transition: all 0.5s;
+}
+.card {
+  cursor: pointer;
+  background: #4a4a4a !important;
+  min-width: 225.8px;
+  padding: 30px;
+  border-radius: 4px;
+  width: 225.8px;
+  /* height: 200px; */
+  background: var(--background-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  box-shadow: 2px 2px 20px rgba(0 0 0 / 10%);
+  transition: 0.2s;
+  top: 0;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 2px 2px 20px rgba(0 0 0 / 20%);
+  top: -10px;
+}
+.cards {
+  display: flex;
+  gap: 50px;
+  margin-right: auto;
+  padding: 50px
+}
+.header {
+  font-size: 50px;
+  text-align: center;
+}
+.menu {
+  /* color: #9c9c9c; */
+  transition: height 0.3s;
+  border-radius: 25px;
+  border: 3px solid #9c9c9c;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  /* display: none; */
+}
+.menuopen {
+  height: 170px !important;
+  display: block !important;
+}
+ion-icon {
+  width: 50px;
+  height: 50px;
+}
+.b2 {
+  transition: opacity 0.75s;
+  opacity: 0;
+}
+.b3 {
+  transition: opacity 1.5s;
+  opacity: 0
+}
